@@ -67,15 +67,16 @@ An example of what the data in a log file, 2018-11-12-events.json:
 #### ETL data
  - `python ETL_S3_Redshift.py`
 
-## Example Query to Validate ETL pipeline
+## Example Query Result to Validate ETL pipeline
+#### Query Analysis code is in [Data analysis](https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/data-analysis-queries.ipynb)
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/query_select.png" width="30%">
 </div>
 
 
-<div align="center">
-  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/aggregate.png" width="30%">
+<div align="left">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/query_add.png" width="30%">
 </div>
 
 
