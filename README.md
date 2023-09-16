@@ -50,7 +50,7 @@ Below is what data is in `log_json_path.json`:
 
 
 ## How to Run
-#### Set up AWS cloud cluster:
+#### Set up AWS cloud cluster: \
  -Create IAM user, IAM role, VPC security group in AWS account
  -Attach policies including `AWSS3ReadOnlyAccess` and `AWSRedshiftFullAccess` to IAM role
  -Use AWS access key and secret key to create clients for `EC2`, `S3 bucket`, and `Redshift`.
