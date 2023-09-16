@@ -34,23 +34,19 @@ For example, here are file paths to two files in this dataset:
 
 An example of what the data in a log file, 2018-11-12-events.json: 
 
-[log_data picture]
-
-#### Log Json Meta Information
-Below is what data is in `log_json_path.json`:
-
-[Contents of log_json_path.json]
-
-  
+<div align="center">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/log_data.png" width="80%">
+</div>
+ 
 ## Data Warehouse Schema in Redshift for Song Play Analysis
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/Schema.png" width="100%">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/Schema.png" width="80%">
 </div>
 
 
-## How to Run
-#### Set up AWS cloud cluster: 
+## Instruction:
+#### Set up AWS cloud cluster
  - Create IAM user, IAM role, VPC security group in AWS account
  - Attach policies including `AWSS3ReadOnlyAccess` and `AWSRedshiftFullAccess` to IAM role
  - Use AWS access key and secret key to create clients for `EC2`, `S3 bucket`, and `Redshift`.
@@ -61,7 +57,7 @@ Below is what data is in `log_json_path.json`:
 #### ETL data
  - `python ETL_S3_Redshift.py`
 
-Reference: \
- - [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b) \
- - [AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html) \
+Reference:
+ - [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)
+ - [AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html)
  - [AWS EC2](https://docs.aws.amazon.com/en_us/ec2/)
