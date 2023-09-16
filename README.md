@@ -67,6 +67,17 @@ An example of what the data in a log file, 2018-11-12-events.json:
 #### ETL data
  - `python ETL_S3_Redshift.py`
 
+## Example Query to Validate ETL pipeline
+
+<div align="center">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/query_select.png" width="80%">
+</div>
+
+
+<div align="center">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/aggregate.png" width="80%">
+</div>
+
 
 Reference:
  - [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)
