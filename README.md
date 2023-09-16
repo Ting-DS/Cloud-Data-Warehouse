@@ -44,7 +44,10 @@ Below is what data is in `log_json_path.json`:
   
 ## Data Warehouse Schema in Redshift for Song Play Analysis
 
-[Schema]()
+<div align="center">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/Schema.png" width="100%">
+</div>
+
 
 ## How to Run
 #### Set up AWS cloud cluster:
