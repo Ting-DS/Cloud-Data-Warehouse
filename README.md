@@ -80,6 +80,26 @@ An example of what the data in a log file, 2018-11-12-events.json:
 </div>
 
 
+## Project Steps
+
+1. **Create Table Schemas**
+   - Design table schemas and store SQL CREATE statements in `sql_queries.py`.
+   - Use `create_tables.py` to connect to the database, create tables, and handle table drops if needed.
+   - Set up an AWS Redshift cluster and create an IAM role with S3 read access.
+   - Add Redshift database and IAM role info to `dwh.cfg`.
+   - Test the schema creation with `create_tables.py`.
+
+2. **Build ETL Pipeline**
+   - In `etl.py`, implement data loading from S3 to staging tables and from staging to analytics tables in Redshift.
+   - After running `create_tables.py`, execute `etl.py` to load and transform data.
+   - Validate by running analytic queries on Redshift.
+
+3. **Validate ETL Pipeline with Simple Query**
+   - Write a basic query to retrieve data from analytics tables.
+   - Execute the query on Redshift to verify ETL results.
+
+4. **Remember to [delete your Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-clusters-console.html#delete-cluster) cluster when done to prevent unnecessary costs！**
+
 Reference:
  - [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)
  - [AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html)
