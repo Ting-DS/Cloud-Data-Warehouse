@@ -11,7 +11,7 @@ As a data engineer, I will build an ETL pipeline that extracts their data from S
 
 ## AWS Redshift CPU Monitoring
 <div align="center">
-  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/EC2_nodes.png" width="80%">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/EC2_nodes.png" width="100%">
 </div>
 
 ## Dataset
