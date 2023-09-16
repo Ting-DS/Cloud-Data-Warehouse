@@ -61,7 +61,7 @@ Below is what data is in `log_json_path.json`:
 #### ETL data
 `python ETL_S3_Redshift.py`
 
-Reference: 
+Reference: \
 [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b) \
 [AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html) \
 [AWS EC2](https://docs.aws.amazon.com/en_us/ec2/)
