@@ -3,7 +3,7 @@
 Sparkify is a music streaming startup, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in **AWS S3**, in a directory of JSON logs on user activity on the music app, as well as a directory with JSON metadata on the songs in their app.
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/AWS.jpeg" width="80%">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/AWS.jpeg" width="50%">
 </div>
 
 As a data engineer, I will build an ETL pipeline that extracts their data from S3 and copy into staging table in **Redshift**, and transforms data into **Star Schema Database** with a set of dimensional tables for marketing and analytics team to query aggregated information and find insights of song plays.
