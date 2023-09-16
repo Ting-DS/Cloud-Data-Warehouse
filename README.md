@@ -76,7 +76,7 @@ An example of what the data in a log file, 2018-11-12-events.json:
 
 
 <div align="left">
-  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/query_add.png" width="30%">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/query_agg.png" width="30%">
 </div>
 
 
