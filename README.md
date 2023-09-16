@@ -2,7 +2,17 @@
 ## Project Overview
 Sparkify is a music streaming startup, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in **AWS S3**, in a directory of JSON logs on user activity on the music app, as well as a directory with JSON metadata on the songs in their app.
 
+<div align="center">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/AWS.jpeg" width="80%">
+</div>
+
 As a data engineer, I will build an ETL pipeline that extracts their data from S3 and copy into staging table in **Redshift**, and transforms data into **Star Schema Database** with a set of dimensional tables for marketing and analytics team to query aggregated information and find insights of song plays.
+
+
+## AWS Redshift CPU Monitor Example
+<div align="center">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/EC2_nodes.jpeg" width="80%">
+</div>
 
 ## Dataset
 There are 3 datasets that reside in S3:
@@ -56,6 +66,7 @@ An example of what the data in a log file, 2018-11-12-events.json:
  - `python create_tables_redshift.py`
 #### ETL data
  - `python ETL_S3_Redshift.py`
+
 
 Reference:
  - [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)
