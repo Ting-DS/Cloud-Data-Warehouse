@@ -50,18 +50,18 @@ Below is what data is in `log_json_path.json`:
 
 
 ## How to Run
-#### Set up AWS cloud cluster: \
- -Create IAM user, IAM role, VPC security group in AWS account
- -Attach policies including `AWSS3ReadOnlyAccess` and `AWSRedshiftFullAccess` to IAM role
- -Use AWS access key and secret key to create clients for `EC2`, `S3 bucket`, and `Redshift`.
- -Create a RedShift Cluster and get the Host address, database name, IAM user name and password 
- -Configure the file `dwh.cfg`
+#### Set up AWS cloud cluster: 
+ - Create IAM user, IAM role, VPC security group in AWS account
+ - Attach policies including `AWSS3ReadOnlyAccess` and `AWSRedshiftFullAccess` to IAM role
+ - Use AWS access key and secret key to create clients for `EC2`, `S3 bucket`, and `Redshift`.
+ - Create a RedShift Cluster and get the Host address, database name, IAM user name and password 
+ - Configure the file `dwh.cfg`
 #### Create tables
-`python create_tables_redshift.py`
+ - `python create_tables_redshift.py`
 #### ETL data
-`python ETL_S3_Redshift.py`
+ - `python ETL_S3_Redshift.py`
 
 Reference: \
-[AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b) \
-[AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html) \
-[AWS EC2](https://docs.aws.amazon.com/en_us/ec2/)
+ - [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b) \
+ - [AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html) \
+ - [AWS EC2](https://docs.aws.amazon.com/en_us/ec2/)
