@@ -1,12 +1,12 @@
 # Cloud Data Warehouse & ETL Pipeline
 ## Project Overview
-Sparkify is a music streaming startup, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in ** [AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html)**, in a directory of JSON logs on user activity on the music app, as well as a directory with JSON metadata on the songs in their app.
+Sparkify is a music streaming company, has grown their user base and song database and want to move their processes and data onto the cloud. Their data resides in ** [AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html)**, in a directory of JSON logs on user activity on the music app, as well as a directory with JSON metadata on the songs in their app.
 
 <div align="center">
   <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/AWS.jpeg" width="50%">
 </div>
 
-As a data engineer, I will build an ETL pipeline that extracts their data from S3 and copy into staging table in **Redshift**, and transforms data into **Star Schema Database** with a set of dimensional tables for marketing and analytics team to query aggregated information and find insights of song plays.
+As a data engineer, I will build an ETL pipeline that extracts their data from S3 and copy into staging table in **[AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)**, and transforms data into **[Star Schema Database](https://www.databricks.com/glossary/star-schema#:~:text=A%20star%20schema%20is%20used,like%20transaction%20amounts%20and%20quantities).)** with a set of dimensional tables for marketing and analytics team to query aggregated information and find insights of song plays.
 
 
 ## AWS Redshift CPU Monitoring
