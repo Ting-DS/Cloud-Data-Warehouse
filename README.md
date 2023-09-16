@@ -9,9 +9,9 @@ Sparkify is a music streaming startup, has grown their user base and song databa
 As a data engineer, I will build an ETL pipeline that extracts their data from S3 and copy into staging table in **Redshift**, and transforms data into **Star Schema Database** with a set of dimensional tables for marketing and analytics team to query aggregated information and find insights of song plays.
 
 
-## AWS Redshift CPU Monitor Example
+## AWS Redshift CPU Monitoring
 <div align="center">
-  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/EC2_nodes.jpeg" width="80%">
+  <img src="https://github.com/Ting-DS/Cloud-Data-Warehouse/blob/main/image/EC2_nodes.png" width="80%">
 </div>
 
 ## Dataset
