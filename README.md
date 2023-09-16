@@ -42,41 +42,23 @@ Below is what data is in `log_json_path.json`:
 [Contents of log_json_path.json]
 
   
-## Star Schema for Song Play Analysis
+## Data Warehouse Schema in Redshift for Song Play Analysis
 
-#### Fact Table
-songplays - records in event data associated with song plays. Columns for the table:
-
-songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
-
-#### Dimension Tables 
-##### users
-
-user_id, first_name, last_name, gender, level
-##### songs
-
-song_id, title, artist_id, year, duration
-
-##### artists
-
-artist_id, name, location, lattitude, longitude
-
-##### time
-
-start_time, hour, day, week, month, year, weekday
-
+[Schema]()
 
 ## How to Run
 #### Set up AWS cloud cluster:
-1. Use 
-
+ -Create IAM user, IAM role, VPC security group in AWS account
+ -Attach policies including `AWSS3ReadOnlyAccess` and `AWSRedshiftFullAccess` to IAM role
+ -Use AWS access key and secret key to create clients for `EC2`, `S3 bucket`, and `Redshift`.
+ -Create a RedShift Cluster and get the Host address, database name, IAM user name and password 
+ -Configure the file `dwh.cfg`
 #### Create tables
-
 `python create_tables_redshift.py`
-
-#### Load Data
-
+#### ETL data
 `python ETL_S3_Redshift.py`
 
-
-Reference: [AWS Redshift Doc](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)
+Reference: 
+[AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)
+[AWS S3](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html)
+[AWS EC2](https://docs.aws.amazon.com/en_us/ec2/)
